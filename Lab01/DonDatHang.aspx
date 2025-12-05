@@ -108,7 +108,7 @@
                     <td class="auto-style9">
                         <asp:Label ID="Label4" ForeColor="Green" Font-Bold="true"  runat="server" Text="Chọn các loại bánh sau:"></asp:Label>
                         <br />
-                        <asp:ListBox ID="lstBanhDat" Width="55%" runat="server"></asp:ListBox>
+                        <asp:ListBox ID="lstBanhDat" Width="55%" runat="server" SelectionMode="Multiple"></asp:ListBox>
                         
                         <asp:ImageButton ID="btnXoa" runat="server" Height="30px" ImageUrl="~/Assets/recycle-bin.png" OnClick="btnXoa_Click" style="width: 30px" />
                         
