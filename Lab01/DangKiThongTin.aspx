@@ -32,9 +32,8 @@
     </style>
 </head>
 <body>
-    <form id="form1" runat="server" >
-        <div style="width: auto">
-
+    <form id="form1" runat="server"  >
+   
             <table cellpadding="11" align="center" class="auto-style1">
                 <tr>
                     <td style="color: #FFFFFF; background-color: #0066FF; font-size: large;" colspan="2"> ĐĂNG KÍ THÔNG TIN</td>
@@ -55,7 +54,7 @@
                     <td class="auto-style5">Giới Tính</td>
                     <td class="auto-style7">
                         <asp:RadioButtonList ID="rblGioiTinh" runat="server">
-                            <asp:ListItem>Nam</asp:ListItem>
+                            <asp:ListItem Selected="True">Nam</asp:ListItem>
                             <asp:ListItem>Nữ</asp:ListItem>
                         </asp:RadioButtonList>
 
@@ -91,7 +90,7 @@
                     <td class="auto-style5" >&nbsp;</td>
                     <td class="auto-style7">
                          <asp:Button CssClass="auto-style8" ID="btnGui" runat="server" BackColor="Green" ForeColor="White" Text="Gửi" OnClick="btnGui_Click" />
-                         <asp:Button  CssClass="auto-style8" ID="btnLai" runat="server"  BackColor="Red" ForeColor="White" Text="Làm Lại" />
+                         <asp:Button  CssClass="auto-style8" ID="btnLai" runat="server"  BackColor="Red" ForeColor="White" Text="Làm Lại" OnClick="btnLai_Click" />
                     </td>
                 </tr>
                 <tr>
@@ -103,7 +102,7 @@
                     </td>
                 </tr>
                 </table>
-        </div>
+       
     </form>
 </body>
 </html>
