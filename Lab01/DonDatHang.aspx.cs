@@ -47,6 +47,7 @@ namespace Lab01
             kq += "<b>Khách hàng:</b> " + txtHoTen.Text + "<br/>";
             kq += "<b>Địa chỉ:</b> " + txtDiaChi.Text + "<br/>";
             kq += "<b>Mã số thuế:</b> " + txtMaSoThue.Text + "<br/><br/>";
+
                 
             kq += "<b>Đặt các loại bánh sau:</b>";
 

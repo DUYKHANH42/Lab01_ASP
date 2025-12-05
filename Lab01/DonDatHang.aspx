@@ -6,9 +6,9 @@
 <head runat="server">
     <title></title>
     <style type="text/css">
-        .auto-style1 {
+        .auto-style1{
             width: 800px;
-             margin: 20px auto; 
+             margin: 20px auto;  
         }
          .auto-style5 {
           text-align:start;
@@ -65,8 +65,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div style="width: 806px">
-            <table align="center" cellpadding="3" cellspacing="3" class="auto-style1" style="border-style: solid; border-color: #00CC66; padding: 4px; margin: 4px; overflow: hidden; clip: rect(7px, 9px, auto, auto); table-layout: fixed; border-spacing: inherit; align-self:center">
+        <div align="center" >
+            <table cellpadding="3" cellspacing="3" class="auto-style1" style="border-style: solid; border-color: #00CC66; padding: 4px; margin: 4px; overflow: hidden; clip: rect(7px, 9px, auto, auto); table-layout: fixed; border-spacing: inherit;">
                 <tr>
                     <td colspan="2" style="text-align:center; background-color:blue; color:white">
                         <h2><asp:Label runat="server" >ĐƠN ĐẶT HÀNG</asp:Label></h2>
