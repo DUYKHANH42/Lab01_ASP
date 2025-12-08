@@ -98,8 +98,8 @@
                         <asp:DropDownList ID="ddlBanh" Width="55%" style="margin:10px auto;" runat="server">
                         </asp:DropDownList>
                         <br />
-                        <asp:Label ID="Label2" runat="server"  Text="Số lượng:"></asp:Label>
-                        <asp:TextBox ID="txtSoLuong" placeholder="" runat="server" style="width:30%; text-align: left;" ></asp:TextBox>
+                        <asp:Label ID="Label2"  runat="server"  Text="Số lượng:"></asp:Label>
+                        <asp:TextBox ID="txtSoLuong" TextMode="Number" min="1" placeholder="" runat="server" style="width:30%; text-align: left;" ></asp:TextBox>
                         <asp:Label ID="Label3" runat="server" Text="cái"></asp:Label>
                         <br />
                         <asp:Button ID="btnDat" CssClass="auto-style8" runat="server" Text=">" BorderColor="Lime" OnClick="btnDat_Click" />
