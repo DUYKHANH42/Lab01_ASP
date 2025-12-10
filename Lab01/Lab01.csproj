@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="Assets\recycle-bin.png" />
     <Content Include="DangKiThongTin.aspx" />
+    <Content Include="DangKyThanhVien.aspx" />
     <Content Include="DonDatHang.aspx" />
     <Content Include="Global.asax" />
     <Content Include="TinhToan.aspx" />
@@ -81,6 +82,13 @@
     </Compile>
     <Compile Include="DangKiThongTin.aspx.designer.cs">
       <DependentUpon>DangKiThongTin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DangKyThanhVien.aspx.cs">
+      <DependentUpon>DangKyThanhVien.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DangKyThanhVien.aspx.designer.cs">
+      <DependentUpon>DangKyThanhVien.aspx</DependentUpon>
     </Compile>
     <Compile Include="DonDatHang.aspx.cs">
       <DependentUpon>DonDatHang.aspx</DependentUpon>

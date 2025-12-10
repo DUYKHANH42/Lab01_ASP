@@ -11,8 +11,9 @@
              margin: 20px auto;  
         }
          .auto-style5 {
-          text-align:start;
-         }
+            text-align: start;
+            width: 485px;
+        }
          .auto-style7 {
              height: 30px;
              text-align: left;
@@ -61,6 +62,9 @@
         width: 80px;
         text-align: right;
     }
+        .auto-style10 {
+            width: 485px;
+        }
     </style>
 </head>
 <body>
@@ -76,6 +80,7 @@
                    <td class="auto-style5">Khách hàng:</td>
                     <td class="auto-style7">
                         <asp:TextBox ID="txtHoTen" placeholder="Trần Thanh Minh" runat="server" style="width:80%; text-align: left;" ></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="rfvKH" runat="server" ControlToValidate="txtHoTen" Display="Dynamic" ErrorMessage="Vui lòng nhập tên Khách Hàng" ForeColor="Red">*</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -88,10 +93,11 @@
                 <td class="auto-style5">Mã số thuế:</td>
                  <td class="auto-style7">
                      <asp:TextBox ID="txtMaSoThue" placeholder="" runat="server" style="width:80%; text-align: left;" ></asp:TextBox>
+                     <asp:RequiredFieldValidator ID="rfvMST" runat="server" ControlToValidate="txtMaSoThue" Display="Dynamic" ErrorMessage="Vui lòng nhập Mã số thuế" ForeColor="Red">*</asp:RequiredFieldValidator>
                  </td>
                 </tr>
                 <tr>
-                    <td >
+                    <td class="auto-style10" >
                         <asp:Label ID="Label1" ForeColor="Green" Font-Bold="true"  runat="server" Text="Chọn các loại bánh sau:" style="text-align: left"></asp:Label>
                         <div class="auto-style9">
                         <br />
@@ -100,7 +106,10 @@
                         <br />
                         <asp:Label ID="Label2"  runat="server"  Text="Số lượng:"></asp:Label>
                         <asp:TextBox ID="txtSoLuong" TextMode="Number" min="1" placeholder="" runat="server" style="width:30%; text-align: left;" ></asp:TextBox>
-                        <asp:Label ID="Label3" runat="server" Text="cái"></asp:Label>
+                        <asp:RequiredFieldValidator ID="rfvSoLuong" runat="server" ControlToValidate="txtSoLuong" Display="Dynamic" ErrorMessage="Không được để trống" style="text-align: justify; color: #FF0000">*</asp:RequiredFieldValidator>
+                            <asp:CompareValidator ID="cvSoLuong" runat="server" ControlToValidate="txtSoLuong" Display="Dynamic" ErrorMessage="Số lượng phải lớn hơn 0" Operator="GreaterThan" ValueToCompare="0">*</asp:CompareValidator>
+&nbsp;<asp:Label ID="Label3" runat="server" Text="cái"></asp:Label>
+                         
                         <br />
                         <asp:Button ID="btnDat" CssClass="auto-style8" runat="server" Text=">" BorderColor="Lime" OnClick="btnDat_Click" />
                             </div>
@@ -123,6 +132,8 @@
                 <tr class="auto-style9">
                     <td colspan="2">
                         <asp:Label ID="lblDonDH" runat="server" Text=""></asp:Label>
+                        <br />
+                        <asp:ValidationSummary ID="vsLoi" runat="server" ForeColor="Red" style="text-align: left" />
                     </td>
                 </tr>
                
