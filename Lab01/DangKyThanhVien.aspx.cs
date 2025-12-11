@@ -19,7 +19,7 @@ namespace Lab01
         private void KhoiTaoCBO()
         {
            ddlNgay.Items.Add(new ListItem("Chọn Ngày", ""));
-            for (int i = 1; i < 31; i++)
+            for (int i = 1; i <= 31; i++)
             {
                 ddlNgay.Items.Add(new ListItem((i).ToString(), (i).ToString()));
             }
@@ -29,7 +29,7 @@ namespace Lab01
                 ddlThang.Items.Add(new ListItem((i).ToString(), (i).ToString()));
             }
             ddlNam.Items.Add(new ListItem("Chọn Năm", ""));
-            for(int i = 1970; i <= 2024; i++)
+            for(int i = 1970; i <= 2025; i++)
             {
                 ddlNam.Items.Add(new ListItem((i).ToString(), (i).ToString()));
             }

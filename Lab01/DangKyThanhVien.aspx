@@ -8,17 +8,16 @@
     <style type="text/css">
 
         .auto-style1{
-            width: 800px;
-             margin: 20px auto;  
+            width: 1000px;
+            margin: 20px auto;  
         }
          .auto-style5 {
             text-align: left;
-            width: 417px;
         }
          .auto-style7 {
             height: 30px;
             text-align: left;
-            width: 708px;
+            width: 770px;
         }
          .auto-style9 {
             text-align: center;
@@ -37,7 +36,10 @@
         }
         .auto-style16 {
             text-align: left;
-            width: 708px;
+            width: 770px;
+        }
+        .auto-style17 {
+            color: yellow;
         }
         </style>
 </head>
@@ -51,11 +53,11 @@
                     </td>
                 </tr>
                  <tr>
-                    <td colspan="2" style="text-align:center; background-color:pink; color:white" class="auto-style12">
-                     <h4>THÔNG TIN CÁ NHÂN</h4>
+                    <td colspan="2" style="text-align:center; background-color:#0033CC; color:white" class="auto-style12">
+                     <h4 class="auto-style17">THÔNG TIN TÀI KHOẢN</h4>
                      </td>
-                     <td colspan="2" style="text-align:center; background-color:pink; color:white" class="auto-style12">
-                      <h4>HỒ SƠ KHÁCH HÀNG</h4>
+                     <td colspan="2" style="text-align:center; background-color:#0033CC; color:white" class="auto-style12">
+                      <h4  class="auto-style17">HỒ SƠ KHÁCH HÀNG</h4>
                       </td>
                  </tr>
                 <tr>
@@ -85,8 +87,8 @@
                  </td>
                 </tr>
                 <tr>
-                    <td colspan="2" style="text-align:center; background-color:pink; color:white">
-                    <h4>THÔNG TIN CÁ NHÂN</h4>
+                    <td colspan="2" style="text-align:center; background-color:#0033CC; color:white">
+                    <h4 class="auto-style17">THÔNG TIN CÁ NHÂN</h4>
                     </td>
                 </tr>
                 <tr>
@@ -127,7 +129,7 @@
                     <td class="auto-style11">Thu nhập:</td>
                      <td class="auto-style7">
                          <asp:TextBox ID="txtThuNhap" runat="server" style="width:80%; text-align: left;" TextMode="Number" ></asp:TextBox>
-                         <asp:RangeValidator ID="rvThuNhap" runat="server" ControlToValidate="txtThuNhap" Display="Dynamic" ErrorMessage="Thu nhập từ 1tr-50tr" ForeColor="Red" MaximumValue="50000000" MinimumValue="1000000">*</asp:RangeValidator>
+                         <asp:RangeValidator ID="rvThuNhap" runat="server" ControlToValidate="txtThuNhap" Display="Dynamic" ErrorMessage="Thu nhập từ 1tr-50tr" Type="Integer" ForeColor="Red" MaximumValue="50000000" MinimumValue="1000000">*</asp:RangeValidator>
                      </td>
                 </tr>
                 <tr class="auto-style9">
@@ -156,7 +158,6 @@
                         <asp:Button ID="btnDangKy" runat="server" Text="Đăng Ký" BorderColor="#3366FF" BorderStyle="Outset" OnClick="btnDangKy_Click" />
                     </td>
                  </tr>
-               
             </table>
         </div>
     </form>
